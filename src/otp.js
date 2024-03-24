@@ -91,8 +91,8 @@ export class OTP {
      *
      * @return {String}
      */
-  url_gen(issuer, type) {
-    return `otpauth://${type}/SK?secret=${this.secret}&issuer=${issuer}`;
+  url_gen(issuer, type, label) {
+    return `otpauth://${type}/${label}?secret=${this.secret}&issuer=${issuer}`;
   }
 }
 
