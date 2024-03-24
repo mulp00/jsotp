@@ -94,7 +94,7 @@ export class TOTP extends OTP {
      *
      * @return {String}
      */
-  url_gen(issuer = '') {
-    return super.url_gen(issuer, 'totp');
+  url_gen(issuer = '', label = '') {
+    return super.url_gen(issuer, 'totp', label);
   }
 }
